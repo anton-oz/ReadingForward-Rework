@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Quicksand", sans-serif;
+}
+
+/* Everything after this point relates to the image marquee */
+
+:root {
+  --numPics: 12; /* 13 total images */
+  --width: 400px;
+  --negativeWidth: -400px;
+  --duration: 120s;
+}
+
+.wrapper {
+  width: 100%;
+  /* max-width: 1920px; */
+  margin-inline: auto;
+  position: relative;
+  /* height: 100%; */
+  overflow: hidden;
+}
+
+@keyframes scrollLeft {
+  to {
+    left: var(--negativeWidth);
+  }
+}
+
+.item {
+  margin: 0;
+  aspect-ratio: 4/3;
+  width: var(--width);
+  position: absolute;
+  left: max(calc(var(--width) * var(--numPics)), 100%);
+  animation-name: scrollLeft;
+  animation-duration: var(--duration);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.item1 {
+  animation-delay: calc(
+    var(--duration) / var(--numPics) * (var(--numPics) - 1) * -1
+  );
+}
+
+.item2 {
+  animation-delay: calc(
+    var(--duration) / var(--numPics) * (var(--numPics) - 2) * -1
+  );
+}
+
+.item3 {
+  animation-delay: calc(
+    var(--duration) / var(--numPics) * (var(--numPics) - 3) * -1
+  );
+}
+
+.item4 {
+  animation-delay: calc(
+    var(--duration) / var(--numPics) * (var(--numPics) - 4) * -1
+  );
+}
+
+.item5 {
+  animation-delay: calc(
+    var(--duration) / var(--numPics) * (var(--numPics) - 5) * -1
+  );
+}
+
+.item6 {
+  animation-delay: calc(
+    var(--duration) / var(--numPics) * (var(--numPics) - 6) * -1
+  );
+}
+
+.item7 {
+  animation-delay: calc(
+    var(--duration) / var(--numPics) * (var(--numPics) - 7) * -1
+  );
+}
+
+.item8 {
+  animation-delay: calc(
+    var(--duration) / var(--numPics) * (var(--numPics) - 8) * -1
+  );
+}
+.item9 {
+  animation-delay: calc(
+    var(--duration) / var(--numPics) * (var(--numPics) - 9) * -1
+  );
+}
+.item10 {
+  animation-delay: calc(
+    var(--duration) / var(--numPics) * (var(--numPics) - 10) * -1
+  );
+}
+.item11 {
+  animation-delay: calc(
+    var(--duration) / var(--numPics) * (var(--numPics) - 11) * -1
+  );
+}
+.item12 {
+  animation-delay: calc(
+    var(--duration) / var(--numPics) * (var(--numPics) - 12) * -1
+  );
+}
+.item13 {
+  animation-delay: calc(
+    var(--duration) / var(--numPics) * (var(--numPics) - 13) * -1
+  );
+}
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
