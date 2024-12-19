@@ -28,7 +28,7 @@ export default function Marquee() {
             key={i}
             src={`/images/${image}.HEIC.jpg`}
             alt={image}
-            className={`item item${i + 1}`}
+            className={`item item${i + 1} border-x-black border-x-[1.2px]`}
             width={studentImageDimensions}
             // style={{ aspectRatio: "4 / 3" }}
           />

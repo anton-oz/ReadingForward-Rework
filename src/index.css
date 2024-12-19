@@ -8,6 +8,10 @@ html {
   font-family: "Quicksand", sans-serif;
 }
 
+#readingForwardLogoContainer {
+  cursor: default;
+}
+
 /* Media Queries for accordion */
 
 @media screen and (max-width: 1265px) {
@@ -28,10 +32,16 @@ html {
   }
 }
 
+@media screen and (max-width: 500px) {
+  #infoAccordion {
+    width: 100%;
+  }
+}
+
 /* Everything after this point relates to the image marquee */
 
 :root {
-  --numPics: 10; /* 13 total images */
+  --numPics: 9; /* 13 total images b4 editing */
   --width: 400px;
   --negativeWidth: -400px;
   --duration: 120s;
@@ -66,74 +76,59 @@ html {
 
 .item1 {
   animation-delay: calc(
-    var(--duration) / var(--numPics) * (var(--numPics) - 1) * -1
+    var(--duration) / var(--numPics) * (var(--numPics) - 0.9) * -1
   );
 }
 
 .item2 {
   animation-delay: calc(
-    var(--duration) / var(--numPics) * (var(--numPics) - 2) * -1
+    var(--duration) / var(--numPics) * (var(--numPics) - 1.8) * -1
   );
 }
 
 .item3 {
   animation-delay: calc(
-    var(--duration) / var(--numPics) * (var(--numPics) - 3) * -1
+    var(--duration) / var(--numPics) * (var(--numPics) - 2.7) * -1
   );
 }
 
 .item4 {
   animation-delay: calc(
-    var(--duration) / var(--numPics) * (var(--numPics) - 4) * -1
+    var(--duration) / var(--numPics) * (var(--numPics) - 3.6) * -1
   );
 }
 
 .item5 {
   animation-delay: calc(
-    var(--duration) / var(--numPics) * (var(--numPics) - 5) * -1
+    var(--duration) / var(--numPics) * (var(--numPics) - 4.5) * -1
   );
 }
 
 .item6 {
   animation-delay: calc(
-    var(--duration) / var(--numPics) * (var(--numPics) - 6) * -1
+    var(--duration) / var(--numPics) * (var(--numPics) - 5.4) * -1
   );
 }
 
 .item7 {
   animation-delay: calc(
-    var(--duration) / var(--numPics) * (var(--numPics) - 7) * -1
+    var(--duration) / var(--numPics) * (var(--numPics) - 6.3) * -1
   );
 }
 
 .item8 {
   animation-delay: calc(
-    var(--duration) / var(--numPics) * (var(--numPics) - 8) * -1
+    var(--duration) / var(--numPics) * (var(--numPics) - 7.2) * -1
   );
 }
 .item9 {
   animation-delay: calc(
-    var(--duration) / var(--numPics) * (var(--numPics) - 9) * -1
+    var(--duration) / var(--numPics) * (var(--numPics) - 8.1) * -1
   );
 }
 .item10 {
   animation-delay: calc(
-    var(--duration) / var(--numPics) * (var(--numPics) - 10) * -1
-  );
-}
-.item11 {
-  animation-delay: calc(
-    var(--duration) / var(--numPics) * (var(--numPics) - 11) * -1
-  );
-}
-.item12 {
-  animation-delay: calc(
-    var(--duration) / var(--numPics) * (var(--numPics) - 12) * -1
-  );
-}
-.item13 {
-  animation-delay: calc(
-    var(--duration) / var(--numPics) * (var(--numPics) - 13) * -1
+    var(--duration) / var(--numPics) * (var(--numPics) - 9) * -1
   );
 }
 @layer base {
