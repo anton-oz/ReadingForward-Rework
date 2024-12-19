@@ -5,10 +5,7 @@ import {
   AccordionTrigger,
 } from "./accordion";
 
-import {
-  Card,
-  CardContent,
-} from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function InfoAccordion() {
   interface InfoObj {
@@ -86,7 +83,12 @@ export default function InfoAccordion() {
   ];
 
   return (
-    <Accordion type="single" collapsible className="w-[600px] row-start-2 p-4">
+    <Accordion
+      id="infoAccordion"
+      type="single"
+      collapsible
+      className="w-[600px] row-start-2 p-4"
+    >
       {info.map((item, i) => (
         <AccordionItem id={`${item.title}`} value={`item-${i}`} key={i}>
           <a href={`#${item.title}`}>

@@ -8,10 +8,10 @@ export default function Marquee() {
     "Martha4",
     "Martha6",
     "Nigel1",
-    "Nigel5",
+    // "Nigel5",
     // "Nigel7",
     "Nigel9",
-    "Nigel10",
+    // "Nigel10",
     "Nigel11",
   ];
 
@@ -22,7 +22,7 @@ export default function Marquee() {
       {/* 
           for the css behind the marquee go to ./index.css 
         */}
-      <div className="wrapper border-y-2 border-y-black h-[300px]">
+      <div className="wrapper border-y-2 border-y-black h-[292.5px]">
         {studentImages.map((image, i) => (
           <img
             key={i}

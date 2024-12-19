@@ -8,10 +8,30 @@ html {
   font-family: "Quicksand", sans-serif;
 }
 
+/* Media Queries for accordion */
+
+@media screen and (max-width: 1265px) {
+  #infoAccordion {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  #infoAccordion {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  #infoAccordion {
+    width: 80%;
+  }
+}
+
 /* Everything after this point relates to the image marquee */
 
 :root {
-  --numPics: 12; /* 13 total images */
+  --numPics: 10; /* 13 total images */
   --width: 400px;
   --negativeWidth: -400px;
   --duration: 120s;

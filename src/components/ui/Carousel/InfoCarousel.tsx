@@ -28,11 +28,11 @@ export default function InfoCarousel() {
   ];
 
   return (
-    <Carousel className="w-[400px] right-8 rounded-lg">
+    <Carousel className="sm:w-[400px] w-[300px] sm:right-8 rounded-lg">
       <CarouselContent className="rounded-lg">
         {carouselCards.map(({ title, content }, i) => (
           <CarouselItem
-            className="border border-zinc-100 bg-gray-50 rounded-lg overflow-y-scroll h-[400px]"
+            className="border border-zinc-100 bg-gray-50 rounded-lg h-[400px] overflow-y-scroll"
             key={i}
           >
             <h3 className="text-2xl font-semibold p-4 pb-2 sticky top-0 bg-gray-200 rounded-t-lg">
@@ -40,12 +40,12 @@ export default function InfoCarousel() {
             </h3>
             {Array.isArray(content) ? (
               content.map((paragraph, j) => (
-                <p key={j} className="px-4 pb-2 text-[1.2rem]">
+                <p key={j} className="px-4 py-2 text-[1.2rem]">
                   {paragraph}
                 </p>
               ))
             ) : (
-              <p className="px-4 pb-1  text-[1.2rem]">{content}</p>
+              <p className="px-4 py-2  text-[1.2rem]">{content}</p>
             )}
           </CarouselItem>
         ))}
