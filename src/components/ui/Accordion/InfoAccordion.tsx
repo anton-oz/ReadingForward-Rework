@@ -78,7 +78,7 @@ export default function InfoAccordion() {
     {
       title: "When is payment due?",
       content:
-        "Payment for sessions is due monthly, by the start date of each session. Payment methods accepted include credit card via Venmo, as well as cash or check. ",
+        "Payment for sessions is due in full by the first session of each month. Accepted payment methods include credit card via Venmo, cash, or check.",
     },
   ];
 
